@@ -11,36 +11,24 @@ export default function Contact() {
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
             Contact
           </p>
-          <p className='py-6'>Submit the form below to get in touch with me!</p>
+          <p className='py-6'>Get in touch with me!</p>
         </div>
+
         <div className='flex justify-center items-center'>
-          <form
-            action="https://getform.io/f/zbxdpjob"
-            method='POST'
-            className='flex flex-col w-full md:w-1/2'
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder='Enter your name'
-              className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder='Enter your email'
-              className='my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
-            />
-            <textarea
-              name="message"
-              rows='10'
-              className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'
-              placeholder='Enter your message'
-            ></textarea>
-            <button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'>
-              Let's talk
-            </button>
-          </form>
+          <div className=' bg-gray-700 p-12 rounded-lg shadow-lg transform transition duration-500 hover:scale-105'>
+            <p className='py-4 text-2xl transform transition duration-300 hover:scale-110'>
+              <span className='font-bold'>Name:</span> Apoorva Shriwastawa
+            </p>
+            <p className='py-4 text-2xl transform transition duration-300 hover:scale-110'>
+              <span className='font-bold'>Address:</span> Lucknow, Uttar Pradesh
+            </p>
+            <p className='py-4 text-2xl transform transition duration-300 hover:scale-110'>
+              <span className='font-bold'>Email:</span> appumca2022@gmail.com
+            </p>
+            <p className='py-4 text-2xl transform transition duration-300 hover:scale-110'>
+              <span className='font-bold'>Phone:</span> +91xxxxxxxxxx
+            </p>
+          </div>
         </div>
       </div>
     </div>

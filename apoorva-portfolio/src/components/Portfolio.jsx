@@ -2,6 +2,12 @@ import React from 'react';
 import WeatherApp from '../assets/portfolio/weather.png';
 import spotifyClone from '../assets/portfolio/spotify.jpg';
 import home from '../assets/portfolio/Home1.png';
+import portfolio from '../assets/portfolio/portfolio.png'
+import chatapp from '../assets/portfolio/chatapp.png'
+import { LiaEyeSolid } from "react-icons/lia";
+import wanderlust from '../assets/portfolio/wanderlust.png'
+import clock from '../assets/portfolio/clock.png'
+import webpage from '../assets/portfolio/webpage.png'
 
 export default function Portfolio() {
   const portfolios = [
@@ -10,61 +16,78 @@ export default function Portfolio() {
       src: spotifyClone,
       title: "Spotify Clone"
       ,
-      link:""
+      link:"",
+      tech:"HTML5 || CSS",
+      color:"green"
     },
     {
       id: 2,
       src: WeatherApp,
       title: "WeatherApp"
       ,
-      link:""
+      link:"https://github.com/appusrivastva/WeatherApp",
+      tech:"HTML | CSS | javaScript",
+      color:"green"
     },
     {
       id: 3,
       src: home,
       title: "Accommodation Finder"
       ,
-      link:""
+      link:"https://github.com/appusrivastva/Hostel-Pg-Finder",
+        tech:"MERN Stack",
+        color:"green"
     },
     {
       id: 4,
-      src: spotifyClone,
-      title: "Spotify Clone"
+      src: portfolio,
+      title: "My Portfolio"
 
       ,
-      link:""
+      link:"https://github.com/appusrivastva/Apoorva_portfolio/tree/main/apoorva-portfolio",
+        tech:"HTML | CSS |javaScript | ",
+        color:"green"
     },
     {
       id: 5,
-      src: WeatherApp,
-      title: "WeatherApp"
+      src: chatapp,
+      title: "ChatApp"
       ,
-      link:""
+      link:"https://github.com/appusrivastva/ChatApp",
+        tech:"",
+        color:"red"
     },
     {
       id: 6,
-      src: home,
-      title: "Accommodation Finder",
-      link:""
+      src: wanderlust,
+      title: "WanderLust",
+      link:"https://github.com/appusrivastva/Wander_Lust",
+        tech:"HTML || CSS || JavaScript ||  ",
+        color:"red"
     },
     {
       id: 7,
-      src: spotifyClone,
-      title: "Spotify Clone",
-      link:""
+      src: clock,
+      title: "Digital Clock",
+      link:"https://github.com/appusrivastva/Digital_Clock",  
+      tech:"HTML || CSS || javaScript",
+      color:"green"
+
     },
     {
       id: 8,
-      src: WeatherApp,
-      title: "WeatherApp",
-      link:""
+      src: webpage,
+      title: "Responsive Web Page",
+      link:"https://github.com/appusrivastva/Resonponsive-Web-page",
+        tech:"HTML5 | CSS",color:"green"
     },
-    {
-      id: 9,
-      src: home,
-      title: "Accommodation Finder",
-      link:"https://github.com/appusrivastva/Hostel-Pg-Finder"
-    },
+    // {
+    //   id: 9,
+    //   src: home,
+    //   title: "Accommodation Finder",
+    //   link:"",
+    //     tech:""
+    // },
   ];
 
   return (
@@ -82,7 +105,7 @@ export default function Portfolio() {
 
         {/* cards */}
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8'>
-          {portfolios.map(({ id, src, title,link }) => (
+          {portfolios.map(({ id, src, title,link ,tech,color}) => (
             <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
               <img
                 src={src}
@@ -91,19 +114,35 @@ export default function Portfolio() {
               />
               <div className='flex flex-col items-center justify-center p-4'>
                 <p className='w-full text-center py-2'>{title}</p>
+                <p className='w-full text-center py-2'>Tech Stack:  {tech}</p>
+                <div className='w-full text-center py-2 flex items-center justify-center'>
+                  <span>Status:</span>
+                  <div style={{
+                    width: '10px',
+                    height: '10px',
+                    borderRadius: '50%',
+                    marginLeft: '8px',
+                    backgroundColor: color,
+                    border: '2px solid black'
+                  }}></div>
+                </div>
+
+
                 <div className='w-full px-6 py-2 my-2 duration-200 hover:scale-105' >
+                  
                 <a
                             href={link}
                             className='flex justify-between items-center w-full text-white'
                           
                           
-                            target='_blank'
+                            target='_blank'  rel="noreferrer"
                         >
                           
-                          Github Code  
-                        </a>
+                          Github Code  <LiaEyeSolid />
+                        </a>  
+                      
                 </div>
-                {/* <p className='w-full text-center py-2'>Tech Stack</p> */}
+             
                 
                 
                 

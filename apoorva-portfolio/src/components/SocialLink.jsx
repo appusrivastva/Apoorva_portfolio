@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { SiLeetcode } from "react-icons/si";
+import { SiCodechef } from "react-icons/si";
 
 export default function SocialLink() {
     const links = [
@@ -50,6 +51,13 @@ export default function SocialLink() {
                 <>LeetCode <SiLeetcode size={30} /></>
             ),
             href:"https://leetcode.com/u/appu_2024/"
+        },
+        {
+            id: 7,
+            child: (
+                <>CodeChef <SiCodechef size={30} /></>
+            ),
+            href:"https://www.codechef.com/users/apoorva2024"
         },
 
     ]
