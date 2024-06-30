@@ -36,8 +36,23 @@ export default function SocialLink() {
             ),
             href: "https://www.instagram.com/thecodergroup"
         },
+    
         {
             id: 5,
+            child: (
+                <>LeetCode <SiLeetcode size={30} /></>
+            ),
+            href:"https://leetcode.com/u/appu_2024/"
+        },
+        {
+            id: 6,
+            child: (
+                <>CodeChef <SiCodechef size={30} /></>
+            ),
+            href:"https://www.codechef.com/users/apoorva2024"
+        },
+        {
+            id: 7,
             child: (
                 <>Resume <BsFillPersonLinesFill size={30} /></>
             ),
@@ -45,21 +60,6 @@ export default function SocialLink() {
             style: 'rounded-br-md',
             download: true
         },
-        {
-            id: 6,
-            child: (
-                <>LeetCode <SiLeetcode size={30} /></>
-            ),
-            href:"https://leetcode.com/u/appu_2024/"
-        },
-        {
-            id: 7,
-            child: (
-                <>CodeChef <SiCodechef size={30} /></>
-            ),
-            href:"https://www.codechef.com/users/apoorva2024"
-        },
-
     ]
 
     return (

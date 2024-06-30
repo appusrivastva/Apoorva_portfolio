@@ -31,7 +31,7 @@ export default function About() {
             I'm really proud of my work on the Accommodation Finder project, 
             which I developed during my 5-month industrial training. 
             This project helps people find hostels/PGs in unfamiliar cities. 
-            You can check it out on my GitHub: <a href="https://github.com/appusrivastva/Hostel-Pg-Finder" className="text-blue-400">Accommodation Finder</a>.
+            You can check it out on my GitHub: <a href="https://hostel-pg-finder.vercel.app/" className="text-blue-400">Accommodation Finder</a>.
           </p>
         </div>
 

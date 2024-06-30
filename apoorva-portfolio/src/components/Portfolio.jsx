@@ -16,7 +16,7 @@ export default function Portfolio() {
       src: spotifyClone,
       title: "Spotify Clone"
       ,
-      link:"",
+      link:"https://github.com/appusrivastva/SpotifyClone",
       tech:"HTML5 || CSS",
       color:"green"
     },
@@ -45,7 +45,7 @@ export default function Portfolio() {
 
       ,
       link:"https://github.com/appusrivastva/Apoorva_portfolio/tree/main/apoorva-portfolio",
-        tech:"HTML | CSS |javaScript | ",
+        tech:"HTML | CSS |javaScript | React | Tailwind CSS ",
         color:"green"
     },
     {
@@ -54,7 +54,7 @@ export default function Portfolio() {
       title: "ChatApp"
       ,
       link:"https://github.com/appusrivastva/ChatApp",
-        tech:"",
+        tech:"MERN Stack",
         color:"red"
     },
     {
@@ -62,7 +62,7 @@ export default function Portfolio() {
       src: wanderlust,
       title: "WanderLust",
       link:"https://github.com/appusrivastva/Wander_Lust",
-        tech:"HTML || CSS || JavaScript ||  ",
+        tech:"HTML | CSS | JavaScript | Bootstrap | MongoDb | Node | Express",
         color:"red"
     },
     {
