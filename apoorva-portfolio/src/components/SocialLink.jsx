@@ -56,7 +56,7 @@ export default function SocialLink() {
             child: (
                 <>Resume <BsFillPersonLinesFill size={30} /></>
             ),
-            href: "/Apoorva_Resume.pdf",
+            href: "/Apoorva_resume.pdf",
             style: 'rounded-br-md',
             download: true
         },
